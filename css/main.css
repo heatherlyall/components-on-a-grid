@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  line-height: 1.5;
+  font-family: Georgia, serif;
 }
 
 *,
@@ -13,6 +15,11 @@ img {
   display: grid;
 }
 
+header {
+  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
+  display: contents;
+}
+
 body {
   display: grid;
   gap: 1rem;
@@ -20,13 +27,10 @@ body {
   margin: 0;
 }
 
-header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
-  display: contents;
-}
-
 li {
   list-style-type: none;
+  font-size: 2rem;
+  color: #fff;
 }
 
 .logo {
@@ -35,5 +39,28 @@ li {
 
 main {
   display: grid;
-  grid-auto-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+}
+
+h2 {
+  font-family: Patua One;
+  color: #30658d;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+figure:nth-child(1) {
+  margin-right: .5rem;
+}
+
+figure:nth-child(2) {
+  margin-left: .5rem;
 }
