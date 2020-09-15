@@ -10,9 +10,30 @@ html {
 
 img {
   width: 100%;
+  display: grid;
+}
+
+body {
+  display: grid;
+  gap: 1rem;
+  background-color: #f2f1ed;
+  margin: 0;
 }
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+}
+
+li {
+  list-style-type: none;
+}
+
+.logo {
+  max-width: 14rem;
+}
+
+main {
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
 }
