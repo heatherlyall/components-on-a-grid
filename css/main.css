@@ -10,6 +10,11 @@ html {
   box-sizing: inherit;
 }
 
+.logo {
+  max-width: 14rem;
+  z-index: 1;
+}
+
 img {
   width: 100%;
   display: grid;
@@ -33,10 +38,6 @@ li {
   color: #fff;
 }
 
-.logo {
-  max-width: 14rem;
-}
-
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -44,7 +45,7 @@ main {
 }
 
 h2 {
-  font-family: Patua One;
+  font-family: "Patua One", sans-serif;
   color: #30658d;
   margin-bottom: 0;
 }
@@ -63,4 +64,11 @@ figure:nth-child(1) {
 
 figure:nth-child(2) {
   margin-left: .5rem;
+}
+
+.pano {
+  display: grid;
+  grid-column: 1/ -1;
+  grid-row: 1;
+  padding: 1rem;
 }
