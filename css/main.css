@@ -23,6 +23,8 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 body {
@@ -35,7 +37,11 @@ body {
 li {
   list-style-type: none;
   font-size: 2rem;
+}
+
+a {
   color: #fff;
+  font-family: "Patua One", sans-serif;
 }
 
 main {
@@ -71,4 +77,32 @@ figure:nth-child(2) {
   grid-column: 1/ -1;
   grid-row: 1;
   padding: 1rem;
+}
+
+nav {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 1rem;
+  display: grid;
+  margin-right: 5rem;
+}
+
+ul {
+  display: grid;
+  grid-template-areas: "1 2 3";
+  list-style-type: none;
+  float: right;
+  color: #fff;
+}
+
+ul:nth-child(1) {
+  grid-area: 1;
+}
+
+ul:nth-child(2) {
+  grid-area: 2;
+}
+
+ul:nth-child(3) {
+  grid-area: 3;
 }
