@@ -87,6 +87,7 @@ figure:nth-child(2) {
 nav {
   grid-column: banner;
   grid-row: banner;
+  justify-content: end;
 }
 
 ul {
