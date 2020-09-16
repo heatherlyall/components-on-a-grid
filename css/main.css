@@ -1,108 +1,96 @@
 html {
   box-sizing: border-box;
-  line-height: 1.5;
   font-family: Georgia, serif;
+  line-height: 1.5;
 }
 
 *,
 *::before,
-*::after {
+::after {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  background-color: #f2f1ed;
+}
+
 .logo {
+  grid-column: 1 / -1;
+  grid-row: 5;
   z-index: 1;
-  grid-column: 1;
-  grid-row: 1;
-  align-self: flex-end;
   width: 14rem;
-  margin-left: 1rem;
+  margin: 0;
+}
+
+nav {
+  margin-left: 3em;
+  margin-right: 3em;
+  grid-column: 2 / -1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  font-family: "Patua One", sans-serif;
+  font-size: 2rem;
+}
+
+a {
+  color: #fff;
+}
+
+.pano {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 img {
   width: 100%;
-  display: grid;
 }
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
-}
-
-body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-  "banner banner"
-  "box1 box2";
-  gap: 1rem;
-  background-color: #f2f1ed;
-  margin: 0;
-  padding: 1rem;
-}
-
-li {
-  list-style-type: none;
-  font-size: 2rem;
-  gap: 1rem;
-}
-
-a {
-  color: #fff;
-  font-family: "Patua One", sans-serif;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 7em;
+  margin: 1em;
 }
 
 main {
-  display: contents;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+  grid-template-areas: "box1 box2";
 }
 
 h2 {
-  font-family: "Patua One", sans-serif;
-  color: #30658d;
   margin-bottom: 0;
+  font-family: "Patua One", serif;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: #30658d;
 }
 
 p {
-  margin-top: 0;
+  margin-top: .5rem;
 }
 
-figure {
+figure:nth-child(1) {
   margin: 0;
-
-}
-
-figure:nth-of-type(1) {
   grid-area: box1;
 }
-figure:nth-of-type(2) {
+
+figure:nth-child(2) {
+  margin: 0;
   grid-area: box2;
-}
-
-.pano {
-  display: grid;
-  grid-area: banner;
-}
-
-nav {
-  grid-column: 2 / -1;
-  grid-row: 1;
-}
-
-ul {
-  display: flex;
-  grid-template-areas: "1 2 3";
-  list-style-type: none;
-  color: #fff;
-  gap: 1rem;
-}
-
-nav ul {
-  display: flex;
-  justify-content: end;
-  margin: 1rem;
-  padding: 1rem;
-}
-
-nav li {
-  padding: 1rem;
 }
