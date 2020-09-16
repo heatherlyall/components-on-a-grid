@@ -38,6 +38,7 @@ body {
   gap: 1rem;
   background-color: #f2f1ed;
   margin: 0;
+  padding: 1rem;
 }
 
 li {
@@ -91,7 +92,6 @@ figure:nth-of-type(2) {
 
 .pano {
   display: grid;
-  padding: 1rem;
   grid-area: banner;
 }
 
