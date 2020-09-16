@@ -85,8 +85,6 @@ figure:nth-of-type(2) {
   grid-area: box2;
 }
 
-
-
 .pano {
   display: grid;
   padding: 1rem;
