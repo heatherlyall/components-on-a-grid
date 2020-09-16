@@ -12,6 +12,8 @@ html {
 
 .logo {
   z-index: 1;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 img {
