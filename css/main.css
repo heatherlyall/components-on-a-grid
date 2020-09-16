@@ -67,20 +67,8 @@ p {
 }
 
 figure {
-  margin: 1rem;
+  margin: 0;
 
-}
-
-figure:nth-child(1) {
-  margin-right: .5rem;
-  margin-top: 0;
-  grid-area: box1;
-}
-
-figure:nth-child(2) {
-  margin-left: .5rem;
-  margin-top: 0;
-  grid-area: box2;
 }
 
 figure:nth-of-type(1) {
