@@ -84,13 +84,13 @@ figure:nth-child(2) {
 }
 
 nav {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 5em;
+  grid-column: 3;
+  grid-row: 1;
+  margin-top: 1rem;
 }
 
 ul {
-  display: grid;
+  display: flex;
   grid-template-areas: "1 2 3";
   list-style-type: none;
   float: right;
@@ -100,6 +100,7 @@ ul {
 ul:nth-child(1) {
   grid-area: 1;
 }
+
 ul:box1 {
   grid-area: 2;
 }
