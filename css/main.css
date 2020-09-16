@@ -67,15 +67,18 @@ p {
 
 figure {
   margin: 1rem;
+
 }
 
 figure:nth-child(1) {
   margin-right: .5rem;
+  margin-top: 0;
   grid-area: box1;
 }
 
 figure:nth-child(2) {
   margin-left: .5rem;
+  margin-top: 0;
   grid-area: box2;
 }
 
@@ -110,5 +113,8 @@ nav ul {
   justify-content: end;
   margin: 1rem;
   padding: 1rem;
-  gap: 1rem;
+}
+
+nav li {
+  padding: 1rem;
 }
