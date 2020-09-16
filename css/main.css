@@ -68,19 +68,18 @@ figure {
 
 figure:nth-child(1) {
   margin-right: .5rem;
-  grid-area: 2;
+  grid-area: box1;
 }
 
 figure:nth-child(2) {
   margin-left: .5rem;
-  grid-area: 2;
+  grid-area: box2;
 }
 
 .pano {
   display: grid;
-  grid-column: 1/ -1;
-  grid-row: 1;
   padding: 1rem;
+  grid-area: banner;
 }
 
 nav {
