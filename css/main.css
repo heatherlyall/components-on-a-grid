@@ -85,9 +85,8 @@ figure:nth-child(2) {
 }
 
 nav {
-  grid-column: 3;
-  grid-row: 1;
-  margin-top: 1rem;
+  grid-column: banner;
+  grid-row: banner;
 }
 
 ul {
