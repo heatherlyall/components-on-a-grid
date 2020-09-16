@@ -92,8 +92,8 @@ figure:nth-of-type(2) {
 }
 
 nav {
-  grid-column: banner;
-  grid-row: banner;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
 }
 
 ul {
