@@ -93,7 +93,6 @@ ul {
   display: flex;
   grid-template-areas: "1 2 3";
   list-style-type: none;
-  float: right;
   color: #fff;
 }
 
