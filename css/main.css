@@ -27,7 +27,7 @@ header {
 body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-area: 1;
+  grid-template-areas: "box1 box2"
   gap: 1rem;
   background-color: #f2f1ed;
   margin: 0;
