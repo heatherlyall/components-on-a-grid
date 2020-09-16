@@ -94,7 +94,7 @@ figure:nth-of-type(2) {
 
 nav {
   grid-column: 2 / -1;
-  grid-row: 2 / 1;
+  grid-row: 1;
   gap: 1rem;
 }
 
