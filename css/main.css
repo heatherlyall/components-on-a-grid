@@ -100,11 +100,10 @@ ul {
 ul:nth-child(1) {
   grid-area: 1;
 }
-
-ul:nth-child(2) {
+ul:box1 {
   grid-area: 2;
 }
 
-ul:nth-child(3) {
+ul:box2 {
   grid-area: 3;
 }
