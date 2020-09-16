@@ -23,12 +23,12 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 body {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: 1;
   gap: 1rem;
   background-color: #f2f1ed;
   margin: 0;
@@ -45,9 +45,7 @@ a {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 1rem;
+  display: contents;
 }
 
 h2 {
@@ -66,10 +64,12 @@ figure {
 
 figure:nth-child(1) {
   margin-right: .5rem;
+  grid-area: 2;
 }
 
 figure:nth-child(2) {
   margin-left: .5rem;
+  grid-area: 2;
 }
 
 .pano {
