@@ -43,6 +43,7 @@ body {
 li {
   list-style-type: none;
   font-size: 2rem;
+  gap: 1rem;
 }
 
 a {
@@ -65,7 +66,7 @@ p {
 }
 
 figure {
-  margin: 0;
+  margin: 1rem;
 }
 
 figure:nth-child(1) {
@@ -93,7 +94,8 @@ figure:nth-of-type(2) {
 
 nav {
   grid-column: 2 / -1;
-  grid-row: 2 / -1;
+  grid-row: 2 / 1;
+  gap: 1rem;
 }
 
 ul {
@@ -101,9 +103,13 @@ ul {
   grid-template-areas: "1 2 3";
   list-style-type: none;
   color: #fff;
+  gap: 1rem;
 }
 
 nav ul {
   display: flex;
   justify-content: end;
+  margin: 1rem;
+  padding: 1rem;
+  gap: 1rem;
 }
